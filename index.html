@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="flex-group">
+    <main>
+      <article class="card">
+        <picture class="card__img-wrapper">
+          <a href="#" class="link link-img">
+            <img
+              src="images/image-equilibrium.jpg"
+              alt="Equilibrium #3429 NFT image"
+              class="card__img"
+            />
+            <div class="card__img-overlay">
+              <img
+                src="images/icon-view.svg"
+                alt="view icon"
+                class="icon-view"
+              />
+            </div>
+          </a>
+        </picture>
+
+        <div class="card__content">
+          <h2 class="card__title">
+            <a class="link link-text white" href="#">Equilibrium #3429</a>
+          </h2>
+          <p class="card__desc">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <div class="card__offer-details flex-group">
+            <img src="images/icon-ethereum.svg" alt="" />
+            <div class="price">0.041 ETH</div>
+            <img src="images/icon-clock.svg" alt="" />
+            <div class="countdown">3 days left</div>
+          </div>
+
+          <hr />
+
+          <div class="card__avatar flex-group">
+            <div class="avatar__img-wrapper">
+              <img
+                src="images/image-avatar.png"
+                alt="Jules Wyvern's avatar"
+                class="avatar__img"
+              />
+            </div>
+            <p class="avatar__desc">
+              Creation of
+              <span class="white"></span>
+                <a href="#" class="link link-text white">Jules Wyvern</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

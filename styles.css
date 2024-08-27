@@ -1,0 +1,146 @@
+:root {
+  /* primary */
+  --clr-primary-blue-200: hsl(215, 52%, 70%);
+  --clr-primary-cyan: hsl(178, 100%, 50%);
+
+  /* neutral */
+  --clr-secondary-blue-900: hsl(216, 54%, 11%);
+  --clr-secondary-blue-800: hsl(215, 51%, 16%);
+  --clr-secondary-blue-500: hsl(215, 32%, 27%);
+  --clr-secondary-white: hsl(0, 0%, 100%);
+
+  --fs-400: calc(18rem / 16);
+
+  --ff-outfit: "Outfit", sans-serif;
+
+  --fw-400: 300;
+  --fw-500: 400;
+  --fw-600: 600;
+}
+
+/* 1. utilities
+     2. global styling
+     3. card stylings
+     4. image stylings */
+
+/*========
+   utilities 
+  =========*/
+
+.flex-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  color: var(--clr-secondary-white);
+}
+
+/*=============
+   global styling 
+  ==============*/
+
+body {
+  background-color: var(--clr-secondary-blue-900);
+  font-family: var(--ff-outfit);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  padding: 1rem;
+}
+
+/*============
+  card stylings 
+  =============*/
+
+.card {
+  background-color: var(--clr-secondary-blue-800);
+  border-radius: 20px;
+  color: var(--clr-primary-blue-200);
+  padding: 1.5rem;
+  max-width: calc(350rem / 16);
+}
+
+.card__content > * {
+  margin-top: 1rem;
+}
+
+.card__desc {
+  padding-right: 1rem;
+}
+
+.price,
+.avatar__desc {
+  margin-right: auto;
+}
+
+.price,
+.countdown {
+  margin-left: 0.5rem;
+}
+
+.price {
+  color: var(--clr-primary-cyan);
+  font-weight: var(--fw-600);
+}
+
+hr {
+  color: var(--clr-secondary-blue-500);
+}
+
+.avatar__desc {
+  margin-left: 1rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-text:hover {
+  color: var(--clr-primary-cyan);
+  transition: 0.5s;
+}
+
+/*===================
+   card image stylings
+  ===================*/
+
+.card__img {
+  border-radius: 10px;
+}
+
+.card__img-wrapper {
+  position: relative;
+}
+
+.card__img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+  border-radius: 0.5rem;
+}
+
+.card__img-wrapper:hover .card__img-overlay {
+  opacity: 0.8;
+  background: linear-gradient hsla(178deg, 100%, 50%, 0.5);
+}
+
+.icon-view {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  left: 43%;
+  bottom: 44%;
+}
+
+.avatar__img-wrapper {
+  width: 32px;
+  border-radius: 100%;
+  border: 1.5px solid var(--clr-secondary-white);
+}
